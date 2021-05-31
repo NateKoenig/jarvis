@@ -52,7 +52,7 @@ def respond(voice_data):
 		url = 'https://google.nl/maps/place/' + location + '/&amp;'
 		webbrowser.get().open(url)
 		jarvis_speak('Here is the location of ' + location)
-	if 'what is the weather' in voice_data:
+	if 'what is the weather today' in voice_data:
 		weather = fetchAudio('Where do you want the weather for?')
 		#url
 	if 'exit' in voice_data:
